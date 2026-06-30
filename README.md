@@ -1,4 +1,4 @@
-# ServiceHub
+﻿# ServiceHub
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](#)
 [![Framework](https://img.shields.io/badge/.NET-10.0-blue.svg)](https://dotnet.microsoft.com/)
@@ -9,20 +9,20 @@ An enterprise-grade service marketplace platform (similar to Fiverr/Khamsat) des
 
 ---
 
-## 🎨 Logo Placeholder
+## ðŸŽ¨ Logo Placeholder
 
 ```
-  ██████  ███████ ██████  ██    ██ ██  ██████ ███████ ██   ██ ██    ██ ██████  
- ██       ██      ██   ██ ██    ██ ██ ██      ██      ██   ██ ██    ██ ██   ██ 
- ███████  █████   ██████  ██    ██ ██ ██      █████   ███████ ██    ██ ██████  
-      ██  ██      ██   ██  ██  ██  ██ ██      ██      ██   ██ ██    ██ ██   ██ 
- ███████  ███████ ██   ██   ████   ██  ██████ ███████ ██   ██  ██████  ██████  
+  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  
+ â–ˆâ–ˆ       â–ˆâ–ˆ      â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ â–ˆâ–ˆ      â–ˆâ–ˆ      â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ 
+ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆ   â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ â–ˆâ–ˆ      â–ˆâ–ˆâ–ˆâ–ˆâ–ˆ   â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  
+      â–ˆâ–ˆ  â–ˆâ–ˆ      â–ˆâ–ˆ   â–ˆâ–ˆ  â–ˆâ–ˆ  â–ˆâ–ˆ  â–ˆâ–ˆ â–ˆâ–ˆ      â–ˆâ–ˆ      â–ˆâ–ˆ   â–ˆâ–ˆ â–ˆâ–ˆ    â–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ 
+ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ   â–ˆâ–ˆâ–ˆâ–ˆ   â–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆ   â–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  
 ```
 *An Enterprise Service Marketplace Solution*
 
 ---
 
-## 📖 Project Description
+## ðŸ“– Project Description
 
 **ServiceHub** is a production-ready, multi-tenant digital marketplace. It provides the infrastructure necessary for freelancers, professionals, and agencies (**Vendors**) to list specialized service packages, and for clients (**Customers**) to browse, purchase, track, and review these services.
 
@@ -38,7 +38,7 @@ ServiceHub addresses these problems by separating concern spaces. We build a hig
 
 ---
 
-## ✨ Features
+## âœ¨ Features
 
 ### Current Features
 * **Scaffolded Onion Architecture Layout**: Verified clean build structure across Core, Presentation, and Infrastructure layers.
@@ -59,30 +59,30 @@ ServiceHub addresses these problems by separating concern spaces. We build a hig
 
 ---
 
-## 🏗️ Architecture
+## ðŸ—ï¸ Architecture
 
 ServiceHub is engineered using **Onion Architecture** and **Clean Architecture** patterns. This design keeps the business logic at the core of the application, completely isolated from databases, UIs, and external services.
 
 ```
-                  ┌─────────────────────────────────────┐
-                  │          SmartMarketplace.API       │
-                  │          SmartMarketplace.MVC       │
-                  └──────────────────┬──────────────────┘
-                                     │ (References)
-                                     ▼
-                  ┌─────────────────────────────────────┐
-                  │    SmartMarketplace.Infrastructure  │
-                  └──────────────────┬──────────────────┘
-                                     │ (References)
-                                     ▼
-                  ┌─────────────────────────────────────┐
-                  │    SmartMarketplace.Application     │
-                  └──────────────────┬──────────────────┘
-                                     │ (References)
-                                     ▼
-                  ┌─────────────────────────────────────┐
-                  │      SmartMarketplace.Domain        │
-                  └─────────────────────────────────────┘
+                  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                  â”‚          ServiceHub.API       â”‚
+                  â”‚          ServiceHub.MVC       â”‚
+                  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                     â”‚ (References)
+                                     â–¼
+                  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                  â”‚    ServiceHub.Infrastructure  â”‚
+                  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                     â”‚ (References)
+                                     â–¼
+                  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                  â”‚    ServiceHub.Application     â”‚
+                  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                     â”‚ (References)
+                                     â–¼
+                  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                  â”‚      ServiceHub.Domain        â”‚
+                  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Why Onion Architecture?
@@ -92,24 +92,24 @@ ServiceHub is engineered using **Onion Architecture** and **Clean Architecture**
 
 ### Project Separation Details
 
-#### 💻 SmartMarketplace.Domain (Core)
+#### ðŸ’» ServiceHub.Domain (Core)
 The innermost project of the system containing business invariants. It defines Domain Entities, Value Objects, Domain Events, Enums, and Repository contract interfaces. It references no external NuGet libraries.
 
-#### ⚙️ SmartMarketplace.Application (Core)
+#### âš™ï¸ ServiceHub.Application (Core)
 Implements the system's use cases by orchestrating domain behaviors. It defines application service implementations, DTOs, Mapping profiles, and Request validators.
 
-#### 🔌 SmartMarketplace.Infrastructure (Infrastructure)
+#### ðŸ”Œ ServiceHub.Infrastructure (Infrastructure)
 Implements interfaces declared by the Application/Domain cores. It houses Entity Framework Core setups (`DbContext`), Migrations, Caching registries (Redis), Identity configurations, and external clients (Email senders, SMS APIs, Payment SDKs).
 
-#### 🛡️ SmartMarketplace.API (Presentation)
+#### ðŸ›¡ï¸ ServiceHub.API (Presentation)
 Exposes REST endpoints that serve data in JSON format. It is consumed by the Angular SPA, mobile devices, and external API consumers.
 
-#### 🎛️ SmartMarketplace.MVC (Presentation)
+#### ðŸŽ›ï¸ ServiceHub.MVC (Presentation)
 A server-side rendered application responsible for high-SEO landing pages, public listings, and the Administrative Dashboard.
 
 ---
 
-## 🛠️ Technology Stack
+## ðŸ› ï¸ Technology Stack
 
 | Technology | Category | Description | Status |
 | :--- | :--- | :--- | :--- |
@@ -129,94 +129,94 @@ A server-side rendered application responsible for high-SEO landing pages, publi
 
 ---
 
-## 📂 Folder Structure
+## ðŸ“‚ Folder Structure
 
 The repository structure matches standard Onion layers:
 
 ```
 ServiceHub/
-│
-├── SmartMarketplace.sln                  # Solution Metadata Configuration
-├── .gitignore                            # Excluded file registry
-├── README.md                             # Technical overview document
-├── LICENSE                               # MIT License parameters
-│
-├── SmartMarketplace.API/                 # Web API Project (REST Endpoints)
-│   ├── Controllers/
-│   │   └── PlaceholderController.cs
-│   ├── Contracts/
-│   │   ├── Requests/
-│   │   └── Responses/
-│   ├── Middlewares/
-│   ├── Filters/
-│   ├── Extensions/
-│   ├── DependencyInjection/
-│   └── Swagger/
-│
-├── SmartMarketplace.Application/         # Application Core Layer (Use Cases)
-│   ├── Constants/
-│   │   └── Placeholder.cs
-│   ├── DTOs/
-│   │   └── PlaceholderDto.cs
-│   ├── ExternalServices/
-│   │   └── IExternalService.cs
-│   ├── IRepositories/
-│   │   └── IRepository.cs
-│   ├── IServices/
-│   │   └── IService.cs
-│   ├── Mapping/
-│   │   └── MappingProfile.cs
-│   ├── Options/
-│   │   └── PlaceholderOptions.cs
-│   └── Services/
-│       └── PlaceholderService.cs
-│
-├── SmartMarketplace.Domain/              # Domain Core Layer (Business Rules)
-│   ├── Entities/
-│   │   └── PlaceholderEntity.cs
-│   └── Enums/
-│       └── PlaceholderEnum.cs
-│
-├── SmartMarketplace.Infrastructure/      # Infrastructure Layer (Data & Integrations)
-│   ├── AppDbContext/
-│   │   └── PlaceholderDbContext.cs
-│   ├── Data/
-│   │   └── PlaceholderData.cs
-│   ├── Identity/
-│   │   └── PlaceholderIdentity.cs
-│   ├── Localization/
-│   │   └── PlaceholderLocalization.cs
-│   ├── Migrations/
-│   │   └── PlaceholderMigration.cs
-│   ├── ProgramService/
-│   │   └── ServiceRegistration.cs
-│   ├── Repositories/
-│   │   └── PlaceholderRepository.cs
-│   ├── Services/
-│   │   └── PlaceholderInfrastructureService.cs
-│   └── SignalR/
-│       └── PlaceholderHub.cs
-│
-└── SmartMarketplace.MVC/                 # MVC Presentation Project (Admin Panel & SEO)
-    ├── Areas/
-    │   └── PlaceholderArea.cs
-    ├── Controllers/
-    │   └── PlaceholderController.cs
-    ├── Filters/
-    │   └── PlaceholderFilter.cs
-    ├── Helpers/
-    │   └── PlaceholderHelper.cs
-    ├── Models/
-    │   └── PlaceholderModel.cs
-    ├── Views/
-    │   └── .gitkeep
-    └── wwwroot/
-        └── .gitkeep
+â”‚
+â”œâ”€â”€ ServiceHub.sln                  # Solution Metadata Configuration
+â”œâ”€â”€ .gitignore                            # Excluded file registry
+â”œâ”€â”€ README.md                             # Technical overview document
+â”œâ”€â”€ LICENSE                               # MIT License parameters
+â”‚
+â”œâ”€â”€ ServiceHub.API/                 # Web API Project (REST Endpoints)
+â”‚   â”œâ”€â”€ Controllers/
+â”‚   â”‚   â””â”€â”€ PlaceholderController.cs
+â”‚   â”œâ”€â”€ Contracts/
+â”‚   â”‚   â”œâ”€â”€ Requests/
+â”‚   â”‚   â””â”€â”€ Responses/
+â”‚   â”œâ”€â”€ Middlewares/
+â”‚   â”œâ”€â”€ Filters/
+â”‚   â”œâ”€â”€ Extensions/
+â”‚   â”œâ”€â”€ DependencyInjection/
+â”‚   â””â”€â”€ Swagger/
+â”‚
+â”œâ”€â”€ ServiceHub.Application/         # Application Core Layer (Use Cases)
+â”‚   â”œâ”€â”€ Constants/
+â”‚   â”‚   â””â”€â”€ Placeholder.cs
+â”‚   â”œâ”€â”€ DTOs/
+â”‚   â”‚   â””â”€â”€ PlaceholderDto.cs
+â”‚   â”œâ”€â”€ ExternalServices/
+â”‚   â”‚   â””â”€â”€ IExternalService.cs
+â”‚   â”œâ”€â”€ IRepositories/
+â”‚   â”‚   â””â”€â”€ IRepository.cs
+â”‚   â”œâ”€â”€ IServices/
+â”‚   â”‚   â””â”€â”€ IService.cs
+â”‚   â”œâ”€â”€ Mapping/
+â”‚   â”‚   â””â”€â”€ MappingProfile.cs
+â”‚   â”œâ”€â”€ Options/
+â”‚   â”‚   â””â”€â”€ PlaceholderOptions.cs
+â”‚   â””â”€â”€ Services/
+â”‚       â””â”€â”€ PlaceholderService.cs
+â”‚
+â”œâ”€â”€ ServiceHub.Domain/              # Domain Core Layer (Business Rules)
+â”‚   â”œâ”€â”€ Entities/
+â”‚   â”‚   â””â”€â”€ PlaceholderEntity.cs
+â”‚   â””â”€â”€ Enums/
+â”‚       â””â”€â”€ PlaceholderEnum.cs
+â”‚
+â”œâ”€â”€ ServiceHub.Infrastructure/      # Infrastructure Layer (Data & Integrations)
+â”‚   â”œâ”€â”€ AppDbContext/
+â”‚   â”‚   â””â”€â”€ PlaceholderDbContext.cs
+â”‚   â”œâ”€â”€ Data/
+â”‚   â”‚   â””â”€â”€ PlaceholderData.cs
+â”‚   â”œâ”€â”€ Identity/
+â”‚   â”‚   â””â”€â”€ PlaceholderIdentity.cs
+â”‚   â”œâ”€â”€ Localization/
+â”‚   â”‚   â””â”€â”€ PlaceholderLocalization.cs
+â”‚   â”œâ”€â”€ Migrations/
+â”‚   â”‚   â””â”€â”€ PlaceholderMigration.cs
+â”‚   â”œâ”€â”€ ProgramService/
+â”‚   â”‚   â””â”€â”€ ServiceRegistration.cs
+â”‚   â”œâ”€â”€ Repositories/
+â”‚   â”‚   â””â”€â”€ PlaceholderRepository.cs
+â”‚   â”œâ”€â”€ Services/
+â”‚   â”‚   â””â”€â”€ PlaceholderInfrastructureService.cs
+â”‚   â””â”€â”€ SignalR/
+â”‚       â””â”€â”€ PlaceholderHub.cs
+â”‚
+â””â”€â”€ ServiceHub.MVC/                 # MVC Presentation Project (Admin Panel & SEO)
+    â”œâ”€â”€ Areas/
+    â”‚   â””â”€â”€ PlaceholderArea.cs
+    â”œâ”€â”€ Controllers/
+    â”‚   â””â”€â”€ PlaceholderController.cs
+    â”œâ”€â”€ Filters/
+    â”‚   â””â”€â”€ PlaceholderFilter.cs
+    â”œâ”€â”€ Helpers/
+    â”‚   â””â”€â”€ PlaceholderHelper.cs
+    â”œâ”€â”€ Models/
+    â”‚   â””â”€â”€ PlaceholderModel.cs
+    â”œâ”€â”€ Views/
+    â”‚   â””â”€â”€ .gitkeep
+    â””â”€â”€ wwwroot/
+        â””â”€â”€ .gitkeep
 ```
 
 ---
 
-## 📐 Design Principles
+## ðŸ“ Design Principles
 
 * **SOLID**: Enforced class-level structure (Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion).
 * **Clean Code**: Emphasizing readability, self-documenting naming structures, and minimizing unnecessary code comment clutter.
@@ -227,25 +227,25 @@ ServiceHub/
 
 ---
 
-## 🔒 Authentication Flow
+## ðŸ”’ Authentication Flow
 
 We utilize a robust hybrid security structure:
 
 <details>
 <summary><b>Click to expand authentication details</b></summary>
 
-### 🔑 ASP.NET Core Identity & Database Security
+### ðŸ”‘ ASP.NET Core Identity & Database Security
 We use ASP.NET Core Identity to manage logins, role definitions, password hashing, and user tracking tables.
 * Business tables do not directly link to Identity profiles. We define matching references (`UserId` keys) to prevent business models from leaking authentication details.
 
-### 🌐 JWT Tokens for API (Angular & Mobile Clients)
+### ðŸŒ JWT Tokens for API (Angular & Mobile Clients)
 * **Access Tokens**: Short-lived (e.g., 15 minutes) JWTs carrying user IDs, roles, and granular permissions.
 * **Refresh Tokens**: Long-lived, database-checked, cryptographically secure strings used to request new Access Tokens.
 
-### 🍪 Cookie Authentication for MVC
+### ðŸª Cookie Authentication for MVC
 * MVC admin controllers use standard secure HTTP-Only cookies to protect dashboard pages.
 
-### 👥 Roles & Permissions
+### ðŸ‘¥ Roles & Permissions
 * **System Roles**: `Administrator`, `Vendor`, `Customer`.
 * **Claims-Based Permissions**: Granular authorization policies matching specific views and routes (e.g., `CanApproveService`, `CanWithdrawBalance`).
 
@@ -253,7 +253,7 @@ We use ASP.NET Core Identity to manage logins, role definitions, password hashin
 
 ---
 
-## 📦 Planned Modules
+## ðŸ“¦ Planned Modules
 
 * **Customers**: Profile settings, purchase invoice tracking, dashboard tracking.
 * **Vendors**: Professional descriptions, portfolio items, earnings ledger, proposals interface.
@@ -272,7 +272,7 @@ We use ASP.NET Core Identity to manage logins, role definitions, password hashin
 
 ---
 
-## 🗄️ Database Strategy
+## ðŸ—„ï¸ Database Strategy
 
 We use **SQL Server** as our central relational database. Database tables are managed using **Entity Framework Core Code First** design:
 * All database mapping configurations (Primary Keys, Foreign Keys, Index constraints) are defined using EF Core **Fluent API** within `Infrastructure/Persistence/Configurations` folder files, keeping domain entity files free from database attributes.
@@ -280,27 +280,27 @@ We use **SQL Server** as our central relational database. Database tables are ma
 
 ---
 
-## 🔌 API Documentation
+## ðŸ”Œ API Documentation
 
 API endpoints are mapped, compiled, and tested using **Swagger (OpenAPI)**. The swagger configuration registers bearer-auth requirements, allowing developers to execute JWT-secured operations directly inside the interactive browser dashboard.
 
 ---
 
-## 🖥️ MVC Responsibilities
+## ðŸ–¥ï¸ MVC Responsibilities
 
-The `SmartMarketplace.MVC` project handles:
+The `ServiceHub.MVC` project handles:
 * The administrator controls, user accounts review, and category creation.
 * Search-Engine-Optimized (SEO) public pages containing services directory, vendor listings, and blog portals.
 
 ---
 
-## 🅰️ Angular Interface
+## ðŸ…°ï¸ Angular Interface
 
-The client-facing user interfaces (e.g., Customer Dashboard, Vendor workspace) will be built using **Angular**. It communicates with `SmartMarketplace.API` by passing secure JWT authorization headers.
+The client-facing user interfaces (e.g., Customer Dashboard, Vendor workspace) will be built using **Angular**. It communicates with `ServiceHub.API` by passing secure JWT authorization headers.
 
 ---
 
-## 🚀 Getting Started
+## ðŸš€ Getting Started
 
 ### Prerequisites
 * [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
@@ -325,18 +325,18 @@ dotnet build
 
 ### 4. Run the API Project
 ```bash
-dotnet run --project SmartMarketplace.API
+dotnet run --project ServiceHub.API
 ```
 *Navigating to `http://localhost:<port>/swagger` opens the OpenAPI Swagger playground.*
 
 ### 5. Run the MVC Project
 ```bash
-dotnet run --project SmartMarketplace.MVC
+dotnet run --project ServiceHub.MVC
 ```
 
 ---
 
-## 🗺️ Roadmap
+## ðŸ—ºï¸ Roadmap
 
 - [x] Solution Architecture & Onion Layers Setup
 - [x] Project Folder Tree Scaffolding
@@ -353,7 +353,7 @@ dotnet run --project SmartMarketplace.MVC
 
 ---
 
-## 🤝 Contributing
+## ðŸ¤ Contributing
 
 We welcome community contributions. Please follow these guidelines:
 1. **Fork** the repository and create your feature branch (`git checkout -b feature/amazing-feature`).
@@ -363,13 +363,13 @@ We welcome community contributions. Please follow these guidelines:
 
 ---
 
-## 📄 License
+## ðŸ“„ License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-## 👤 Author
+## ðŸ‘¤ Author
 
 **[Your Name / Username]**
 * Technical Role: Lead Backend / Full-Stack Engineer
@@ -377,8 +377,9 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ---
 
-## 📬 Contact
+## ðŸ“¬ Contact
 
 * **LinkedIn**: `[https://linkedin.com/in/placeholder]`
 * **Email**: `[email.placeholder@example.com]`
 * **GitHub**: `[https://github.com/placeholder]`
+

@@ -1,7 +1,8 @@
-<Solution>
-  <Project Path="SmartMarketplace.API/SmartMarketplace.API.csproj" />
-  <Project Path="SmartMarketplace.Application/SmartMarketplace.Application.csproj" />
-  <Project Path="SmartMarketplace.Domain/SmartMarketplace.Domain.csproj" />
-  <Project Path="SmartMarketplace.Infrastructure/SmartMarketplace.Infrastructure.csproj" />
-  <Project Path="SmartMarketplace.MVC/SmartMarketplace.MVC.csproj" />
+﻿<Solution>
+  <Project Path="ServiceHub.API/ServiceHub.API.csproj" />
+  <Project Path="ServiceHub.Application/ServiceHub.Application.csproj" />
+  <Project Path="ServiceHub.Domain/ServiceHub.Domain.csproj" />
+  <Project Path="ServiceHub.Infrastructure/ServiceHub.Infrastructure.csproj" />
+  <Project Path="ServiceHub.MVC/ServiceHub.MVC.csproj" />
 </Solution>
+
