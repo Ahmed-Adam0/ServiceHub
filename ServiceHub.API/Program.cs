@@ -56,6 +56,8 @@ app.UseRequestLocalization();
 
 app.UseResponseCompression();
 
+app.UseRouting(); // Explicitly register UseRouting before UseCors, UseAuthentication, and UseAuthorization
+
 app.UseCors("AngularPolicy");
 
 app.UseHttpsRedirection();
@@ -66,10 +68,7 @@ app.UseAuthorization();
 app.MapControllers();
 app.MapHealthChecks("/health");
 
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-    app.MapScalarApiReference();
-}
+app.MapOpenApi();
+app.MapScalarApiReference();
 
 app.Run();

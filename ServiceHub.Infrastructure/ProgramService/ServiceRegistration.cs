@@ -16,6 +16,8 @@ using ServiceHub.Application.Common.Interfaces;
 using ServiceHub.Application.Common.Behaviors;
 using ServiceHub.Application.Common.Models;
 using ServiceHub.Application.IServices;
+using ServiceHub.Application.IRepositories;
+using ServiceHub.Infrastructure.Repositories;
 using ServiceHub.Application.Mapping;
 using ServiceHub.Application.Options;
 using ServiceHub.Domain.Entities;
@@ -106,6 +108,7 @@ public static class ServiceRegistration
 
         // 8. Register Scoped Identity Service (Legacy support or feature transition path)
         services.AddScoped<IIdentityService, IdentityService>();
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
 
         // 9. Configure MediatR (Scanning Application Layer assembly containing 'Result')
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Result).Assembly));
