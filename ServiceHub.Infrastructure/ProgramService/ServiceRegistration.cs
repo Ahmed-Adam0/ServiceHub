@@ -1,17 +1,27 @@
-    using System;
+using System;
 using System.Text;
 using AutoMapper;
 using FluentValidation;
+using MediatR;
+using Asp.Versioning;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using ServiceHub.Application.Common.Interfaces;
+using ServiceHub.Application.Common.Behaviors;
+using ServiceHub.Application.Common.Models;
+using ServiceHub.Application.IServices;
 using ServiceHub.Application.Mapping;
 using ServiceHub.Application.Options;
 using ServiceHub.Domain.Entities;
 using ServiceHub.Infrastructure.AppDbContext;
+using ServiceHub.Infrastructure.Middleware;
+using ServiceHub.Infrastructure.Services;
 
 namespace ServiceHub.Infrastructure.ProgramService;
 
@@ -23,6 +33,7 @@ public static class ServiceRegistration
         var connectionString = configuration.GetConnectionString("DefaultConnection");
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(connectionString));
+        services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
 
         // 2. Configure ASP.NET Core Identity
         services.AddIdentity<ApplicationUser, IdentityRole<Guid>>(options =>
@@ -92,6 +103,67 @@ public static class ServiceRegistration
 
         // 7. Configure FluentValidation Scanning
         services.AddValidatorsFromAssembly(typeof(MappingProfile).Assembly);
+
+        // 8. Register Scoped Identity Service (Legacy support or feature transition path)
+        services.AddScoped<IIdentityService, IdentityService>();
+
+        // 9. Configure MediatR (Scanning Application Layer assembly containing 'Result')
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Result).Assembly));
+
+        // 10. Register pipeline behaviors in execution order (Exception -> Logging -> Performance -> Validation)
+        services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ExceptionBehavior<,>));
+        services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
+        services.AddTransient(typeof(IPipelineBehavior<,>), typeof(PerformanceBehavior<,>));
+        services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+
+        // 11. CORS Named Policy Integration
+        services.AddCors(options =>
+        {
+            options.AddPolicy("AngularPolicy", policy =>
+            {
+                policy.WithOrigins("https://localhost:4200", "https://127.0.0.1:4200")
+                      .AllowAnyHeader()
+                      .AllowAnyMethod()
+                      .AllowCredentials();
+            });
+        });
+
+        // 12. Exception Handler & ProblemDetails Configuration
+        services.AddExceptionHandler<GlobalExceptionHandler>();
+        services.AddProblemDetails();
+
+        // 13. Health Checks Integration
+        services.AddHealthChecks()
+                .AddSqlServer(connectionString ?? throw new InvalidOperationException("DefaultConnection connection string is missing."), name: "sqlserver");
+
+        // 14. API Versioning Integration
+        services.AddApiVersioning(options =>
+        {
+            options.DefaultApiVersion = new ApiVersion(1, 0);
+            options.AssumeDefaultVersionWhenUnspecified = true;
+            options.ReportApiVersions = true;
+        })
+        .AddApiExplorer(options =>
+        {
+            options.GroupNameFormat = "'v'VVV";
+            options.SubstituteApiVersionInUrl = true;
+        });
+
+        // 15. Response Compression Integration
+        services.AddResponseCompression(options =>
+        {
+            options.EnableForHttps = true;
+            options.Providers.Add<GzipCompressionProvider>();
+        });
+
+        // 16. Localization Configuration
+        services.Configure<RequestLocalizationOptions>(options =>
+        {
+            var supportedCultures = new[] { "en", "ar" };
+            options.SetDefaultCulture(supportedCultures[0])
+                   .AddSupportedCultures(supportedCultures)
+                   .AddSupportedUICultures(supportedCultures);
+        });
 
         return services;
     }

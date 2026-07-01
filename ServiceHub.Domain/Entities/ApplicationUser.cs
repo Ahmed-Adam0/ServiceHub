@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Identity;
+using ServiceHub.Domain.Identity.Entities;
 
 namespace ServiceHub.Domain.Entities;
 
@@ -14,6 +15,10 @@ public class ApplicationUser : IdentityUser<Guid>
 
     // Navigation property for session refresh tokens
     public virtual ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
+
+    // Navigation properties for role-specific profiles
+    public virtual CustomerProfile? CustomerProfile { get; set; }
+    public virtual VendorProfile? VendorProfile { get; set; }
 
     public ApplicationUser()
     {

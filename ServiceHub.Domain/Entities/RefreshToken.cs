@@ -1,5 +1,5 @@
-﻿using System;
-using ServiceHub.Domain.Common;
+using System;
+using ServiceHub.Domain.Common.Base;
 
 namespace ServiceHub.Domain.Entities;
 
