@@ -1,0 +1,14 @@
+2026-07-04 12:29:09.587 +03:00 [INF] Now listening on: https://localhost:7227
+2026-07-04 12:29:09.618 +03:00 [INF] Now listening on: http://localhost:5103
+2026-07-04 12:29:09.807 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-04 12:29:09.809 +03:00 [INF] Hosting environment: Development
+2026-07-04 12:29:09.810 +03:00 [INF] Content root path: D:\.Net\projects\ServiceHub\ServiceHub.API
+2026-07-04 12:29:12.091 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1888.7090 ms
+2026-07-04 12:29:12.102 +03:00 [WRN] Unable to configure Browser Link script injection on the response. 
+2026-07-04 12:29:12.129 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 12.9588 ms
+2026-07-04 12:29:12.160 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 43.9100 ms
+2026-07-04 12:29:12.542 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 35.7139 ms
+2026-07-04 12:29:13.369 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 1.0956 ms
+2026-07-04 12:33:06.620 +03:00 [INF] HTTP GET /api/Categories/1 responded 404 in 14.9627 ms
+2026-07-04 12:35:20.132 +03:00 [INF] HTTP POST /api/Categories responded 401 in 16.0659 ms
+2026-07-04 12:36:08.833 +03:00 [INF] HTTP GET /api/auth/me responded 401 in 2.1701 ms
